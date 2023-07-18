@@ -5,6 +5,9 @@ Feature: Employee CRUD Operations
   
   Scenario: Get the Employee Data by ID
     When I Hit Get Request with Correct ID
-    Then The Status Code should be
+    Then Data should fetch
+    
+ 
+
 
  
