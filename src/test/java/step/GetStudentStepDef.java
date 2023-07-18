@@ -16,7 +16,7 @@ public class GetStudentStepDef {
 	    res = RestAssured.get("https://dummy.restapiexample.com/api/v1/employee/1");
 	}
 
-	@Then("The Status Code should be")
+	@Then("Data should fetch")
 	public void the_Status_Code_should_be() {
 	    System.out.println(res.prettyPrint());
 	    System.out.println("THE STATUS CODE IS "+res.getStatusCode());
@@ -27,7 +27,6 @@ public class GetStudentStepDef {
         String status = body.jsonPath().get("status");
         
         Assert.assertEquals(status, "success");
-	
 	}
 
 }
